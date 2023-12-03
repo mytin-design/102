@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Dsipay', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+}
+
+html {
+    background: url('./images/pattern-background-desktop.svg') center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: var(--pale-blue);
+}
+.header {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.card {
+    margin: 100px auto;
+    border-radius: 18px;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;;
+
+    align-items: center;
+    */
+
+    display: grid;
+    justify-items: center;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.hero {
+    width: 300px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+
+.text {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.plan > .annual * {
+    font-size: 10px;
+
+}
+
+.annual {
+    width: 90px;
+}
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 20px;
+    height: 75px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.right {
+    margin-left: 50px;
+}
+
+.music-icon {
+    margin-right: 20px;
+}
+
+p > strong {
+    font-weight: 750;
+    font-size: 28px;
+}
+
+button {
+    padding: 8px;
+    height: 35px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    color: #fff;
+    border: none;
+
+}
+
+button:hover {
+    opacity: .4;
+    cursor: pointer;
+}
+
+#order-status {
+    cursor: pointer;
+    opacity: .4;
+    font-weight: bolder;
+}
+
+#order-status:hover {
+opacity: .9;
+
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
